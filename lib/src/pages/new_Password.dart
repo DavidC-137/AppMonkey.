@@ -18,6 +18,7 @@ class newPassword extends StatelessWidget {
                 height: 70.0,
               ),
               Container(
+                alignment: Alignment.center,
                 margin: const EdgeInsets.only(right:40.0, left: 40.0),
                 child: const Text('New Password',
                     style: TextStyle(
@@ -39,10 +40,49 @@ class newPassword extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 40.0,),
-              const SizedBox(
-                height: 20.0,
-              ),
+              
+              Container(
+                    width: double.infinity,
+                    height: 55.0,
+                    margin: const EdgeInsets.only(left: 40.0, right:40.0 ),
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(30),
+                      color: const Color.fromRGBO(242, 242, 242, 1.0)
+                    ),
+                    child:TextFormField(
+                      obscureText: true,
+                        keyboardType: TextInputType.emailAddress,  
+                        decoration: const InputDecoration( 
+                          border: InputBorder.none, 
+                            labelText: '          New Password',
+                            labelStyle: TextStyle(
+                              color:  Color.fromRGBO(182, 183, 183, 1.0)
+                            )  
+                        ),
+                    ),
+                  ),
               const SizedBox(height: 30.0,),
+              Container(
+                    width: double.infinity,
+                    height: 55.0,
+                    margin: const EdgeInsets.only(left: 40.0, right:40.0 ),
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(30),
+                      color: const Color.fromRGBO(242, 242, 242, 1.0)
+                    ),
+                    child:TextFormField(
+                      obscureText: true,
+                        keyboardType: TextInputType.emailAddress,  
+                        decoration: const InputDecoration( 
+                          border: InputBorder.none, 
+                            labelText: '          Confirm Password',
+                            labelStyle: TextStyle(
+                              color:  Color.fromRGBO(182, 183, 183, 1.0)
+                            )  
+                        ),
+                    ),
+                  ),
+                  const SizedBox(height: 30.0,),
                   Container(
                     width: double.infinity,
                     height: 55.0,
